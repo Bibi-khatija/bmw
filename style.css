@@ -1,0 +1,137 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #0b0b0b;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #000000, #1a1a1a);
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: #1c69d4; /* BMW blue */
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #1c69d4;
+}
+
+/* Hero Section */
+.hero {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero-content h2 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  color: #cccccc;
+  margin-bottom: 25px;
+}
+
+.hero-content button {
+  background-color: #1c69d4;
+  border: none;
+  padding: 12px 30px;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.hero-content button:hover {
+  background-color: #1452a3;
+}
+
+/* Car Showcase Section */
+.showcase {
+  padding: 60px 80px;
+}
+
+.showcase h3 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Car Cards */
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.car-card {
+  background-color: #111111;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.car-card:hover {
+  transform: translateY(-8px);
+}
+
+.car-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.car-card-content {
+  padding: 20px;
+}
+
+.car-card-content h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.car-card-content p {
+  font-size: 14px;
+  color: #bbbbbb;
+}
+
+/* Footer */
+footer {
+  background-color: #000000;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  font-size: 13px;
+  color: #777777;
+}
